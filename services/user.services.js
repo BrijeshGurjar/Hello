@@ -5,6 +5,7 @@ var db = require("../db");
 
 
 router.post( "/save",  (req, res, next) => {
+  console.log("hi")
     db.users(req.body).save();    
     res.send("Record saved successfully!!!");
   }
